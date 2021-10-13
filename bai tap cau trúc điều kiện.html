@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="number" id="kiem_tra">
+<input type="number" id="giua_ky">
+<input type="number" id="cuoi_ky">
+    <button onclick="sakura()">nhấp</button>
+<script>
+    function sakura () {
+        let a = +document.getElementById("kiem_tra").value;
+        let b = +document.getElementById("giua_ky").value;
+        let c = +document.getElementById("cuoi_ky").value;
+        let diem = (a + b *2 + c *3)/6
+            if  (diem >= 8){
+                document.write("học lực Gioi");
+            }else if (diem >= 6.5) {
+                document.write("học lực khá");
+            }else if (diem >=5) {
+                document.write("học lực trung bình");
+        }else {
+                document.write("học lực yếu");
+            }
+
+    }
+</script>
+</body>
+</html>

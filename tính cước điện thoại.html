@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>bảng giá điện thoại</h1>
+    <p>100k > 1phút</p>
+    <p>200k > 20phút</p>
+    <p>500k > 30phút</p>
+    <p>1000k > 40phút</p>
+
+<label>
+    <h4>nhập số phút gọi</h4>
+    <input type="number" id="chan">
+</label>
+<button onclick="haha()">thành tiền</button>
+<script>
+    function haha(){
+        let tien =document.getElementById("chan").value;
+            if (tien > 40){
+                document.write("1000k nhé anh bạn")
+            }else if (tien > 30){
+                document.write("500k nhé anh bạn")
+            }else if (tien > 20){
+                document.write("200k nhé bạn")
+            }else {
+                document.write("100k nhé bạn ơi")
+            }
+    }
+</script>
+
+
+</body>
+</html>
